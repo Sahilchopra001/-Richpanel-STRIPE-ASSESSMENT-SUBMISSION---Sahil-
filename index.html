@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Subscription App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to STRIPE App</h1>
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <div id="plans" class="hidden">
+            <!-- Plan options will be dynamically added here -->
+        </div>
+        
+<div id="subscriptionDetails" class="hidden">
+    <h2>Your Subscription Details</h2>
+    <p id="selectedPlan"></p>
+    <button id="cancelSubscriptionBtn">Cancel Subscription</button>
+</div>
+<div id="paymentForm" class="hidden">
+    <h2>Payment Information</h2>
+    <input type="text" id="cardNumber" placeholder="Card Number" required>
+    <input type="text" id="expiryDate" placeholder="Expiry Date" required>
+    <input type="text" id="cvv" placeholder="CVV" required>
+    <button id="subscribePaymentBtn">Subscribe & Pay</button>
+</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
